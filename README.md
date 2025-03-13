@@ -1,10 +1,10 @@
 Gestion des Examens et des Inscriptions
-Ce projet est une application de gestion des examens et des inscriptions des étudiants. Il permet de gérer les examens, les étudiants et leurs inscriptions aux examens. L'application est développée en Java avec une base de données MySQL pour la persistance des données.
+Ce projet est une application de gestion des examens Il permet de gérer les examens, les étudiants et leurs inscriptions aux examens. L'application est développée en Java avec une base de données MySQL pour la persistance des données.
 
 Fonctionnalités
-Ajouter/Supprimer un examen : Permet de créer ou de supprimer un examen avec ses détails (matière, date, salle).
+Ajouter/Supprimer un examen : Permet de créer ou de supprimer un examen.
 
-Inscrire un étudiant à un examen : Permet d'inscrire un étudiant à un examen spécifique.
+Inscrire un étudiant à un examen : Permet d'inscrire un étudiant à un examen.
 
 Filtrer les examens par matière : Permet de lister les examens en fonction de la matière.
 
