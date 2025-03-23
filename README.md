@@ -3,19 +3,32 @@
 
 GESTION DES EXAMENS
 
-Ce projet est une application de gestion des examens Il permet de gérer les examens, les étudiants et leurs inscriptions aux examens. L'application est développée en Java avec une base de données MySQL pour la persistance des données.
+Contexte
 
-Fonctionnalités
-Ajouter/Supprimer un examen : Permet de créer ou de supprimer un examen.
+Dans le cadre de la gestion des examens au sein d'une institution académique, il est essentiel de disposer d'un outil efficace pour le suivi des examens, des étudiants et de leurs inscriptions. Cet outil permettra de centraliser les informations relatives aux examens, aux étudiants et aux salles, facilitant ainsi l'organisation, la supervision et la production de rapports précis.
 
-Inscrire un étudiant à un examen : Permet d'inscrire un étudiant à un examen.
+Problématique
 
-Filtrer les examens par matière : Permet de lister les examens en fonction de la matière.
+Actuellement, la gestion des examens est réalisée de manière fragmentée, utilisant des méthodes manuelles ou des outils disparates. Cela entraîne des difficultés dans la gestion des informations, la communication entre les acteurs et la production de rapports précis. Par exemple :
 
-Rechercher un étudiant inscrit à un examen : Permet de rechercher les étudiants inscrits à un examen donné.
+Les inscriptions des étudiants ne sont pas centralisées.
 
-Structure de la Base de Données
-La base de données MySQL est composée des tables suivantes :
+La recherche d'informations spécifiques (comme les examens par matière ou les étudiants inscrits) est laborieuse.
+Le suivi des statistiques (comme le nombre d'étudiants inscrits par examen) est inexistant ou manuel.
+
+Objectifs
+
+Centraliser les informations :
+Regrouper toutes les données relatives aux examens, aux étudiants et aux inscriptions dans une base de données unique.
+
+Faciliter la gestion :
+Offrir une interface conviviale pour la création, la modification et la suppression des examens et des inscriptions.
+
+Améliorer le suivi :
+Permettre aux administrateurs de suivre les inscriptions des étudiants et de générer des rapports.
+
+Optimiser la recherche :
+Permettre une recherche efficace des examens par matière et un filtrage des étudiants inscrits.
 
 Tables
 Examen : Contient les informations sur les examens.
