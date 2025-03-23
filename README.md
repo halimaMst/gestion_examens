@@ -1,5 +1,7 @@
-GESTION DES EXAMENS
+
 ![Image](https://github.com/user-attachments/assets/ee116ec2-ec0b-4626-a1fd-89b8589ad8f0)
+
+GESTION DES EXAMENS
 
 Ce projet est une application de gestion des examens Il permet de gérer les examens, les étudiants et leurs inscriptions aux examens. L'application est développée en Java avec une base de données MySQL pour la persistance des données.
 
@@ -62,6 +64,7 @@ CREATE TABLE InscriptionExamen (
 );
 
 Technologies et outils utilisés dans le projet
+
 . Langage de programmation
 
 Java : Langage principal pour le développement de l'application, permettant une gestion robuste de la logique métier et une intégration facile avec des bases de données et des interfaces graphiques.
