@@ -44,5 +44,7 @@ CREATE TABLE InscriptionExamen (
 );
 Diagramme de classe 
 ![Image](https://github.com/user-attachments/assets/b113f602-608c-40dc-9957-7b048ac5a5ee)
+
 Diagramme de cas d'utilisation 
+![Image](https://github.com/user-attachments/assets/fd92ac72-583f-4036-a9f3-81e233b39263)
 
