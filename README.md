@@ -21,7 +21,8 @@ Examen : Contient les informations sur les examens.
 
 InscriptionExamen : Contient les informations sur les inscriptions des étudiants aux examens.
 
-Schéma de la Base de Données                                                                
+Script Base de Donnees                                                              
+-- Table Examen
 CREATE TABLE Examen (
 
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
@@ -33,26 +34,30 @@ CREATE TABLE Examen (
     salle VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE Étudiant (
+-- Table Étudiant
+CREATE TABLE Etudiant (
 
-    id(11) INT AUTO_INCREMENT PRIMARY KEY,
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
     
     nom VARCHAR(50) NOT NULL,
     
-    prénom VARCHAR(50) NOT NULL,
+    prenom VARCHAR(50) NOT NULL,
     
     email VARCHAR(80) NOT NULL UNIQUE
 );
 
+-- Table InscriptionExamen
 CREATE TABLE InscriptionExamen (
 
-    examen_id(11) INT NOT NULL,
+    examen_id INT(11) NOT NULL,
     
-    etudiant_id(11) INT NOT NULL,
+    etudiant_id INT(11) NOT NULL,
     
-    FOREIGN KEY (examen_id) REFERENCES Examen(id),
+    PRIMARY KEY (examen_id, etudiant_id),
     
-    FOREIGN KEY (etudiant_id) REFERENCES Étudiant(id)
+    FOREIGN KEY (examen_id) REFERENCES Examen(id) ON DELETE CASCADE,
+    
+    FOREIGN KEY (etudiant_id) REFERENCES Etudiant(id) ON DELETE CASCADE
 );
 
 Technologies et outils utilisés dans le projet
@@ -107,30 +112,7 @@ Diagramme de classe
 Diagramme de cas d'utilisation 
 
 ![Image](https://github.com/user-attachments/assets/fd92ac72-583f-4036-a9f3-81e233b39263)
--- Table Examen
-CREATE TABLE Examen (
-    id INT(11) AUTO_INCREMENT PRIMARY KEY,
-    matiere VARCHAR(50) NOT NULL,
-    date DATE NOT NULL,
-    salle VARCHAR(50) NOT NULL
-);
 
--- Table Étudiant
-CREATE TABLE Etudiant (
-    id INT(11) AUTO_INCREMENT PRIMARY KEY,
-    nom VARCHAR(50) NOT NULL,
-    prenom VARCHAR(50) NOT NULL,
-    email VARCHAR(80) NOT NULL UNIQUE
-);
-
--- Table InscriptionExamen
-CREATE TABLE InscriptionExamen (
-    examen_id INT(11) NOT NULL,
-    etudiant_id INT(11) NOT NULL,
-    PRIMARY KEY (examen_id, etudiant_id),
-    FOREIGN KEY (examen_id) REFERENCES Examen(id) ON DELETE CASCADE,
-    FOREIGN KEY (etudiant_id) REFERENCES Etudiant(id) ON DELETE CASCADE
-);
 
 Demo Video
 https://github.com/user-attachments/assets/ffc427fe-000f-45fb-a8dd-7646e2ec706c
