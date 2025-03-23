@@ -23,25 +23,38 @@ InscriptionExamen : Contient les informations sur les inscriptions des étudiant
 
 Schéma de la Base de Données                                                                
 CREATE TABLE Examen (
+
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    
     matiere VARCHAR(50) NOT NULL,
+    
     date DATE NOT NULL,
+    
     salle VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Étudiant (
+
     id(11) INT AUTO_INCREMENT PRIMARY KEY,
+    
     nom VARCHAR(50) NOT NULL,
+    
     prénom VARCHAR(50) NOT NULL,
+    
     email VARCHAR(80) NOT NULL UNIQUE
 );
 
 CREATE TABLE InscriptionExamen (
+
     examen_id(11) INT NOT NULL,
+    
     etudiant_id(11) INT NOT NULL,
+    
     FOREIGN KEY (examen_id) REFERENCES Examen(id),
+    
     FOREIGN KEY (etudiant_id) REFERENCES Étudiant(id)
 );
+
 Technologies et outils utilisés dans le projet
 1. Langage de programmation
 Java : Langage principal pour le développement de l'application, permettant une gestion robuste de la logique métier et une intégration facile avec des bases de données et des interfaces graphiques.
@@ -63,9 +76,13 @@ MagicDraw : Outil de modélisation UML pour la création de diagrammes de classe
 
 6. Accès aux données
 JDBC (Java Database Connectivity) : API Java utilisée pour connecter l'application à la base de données MySQL, permettant l'exécution de requêtes SQL pour ajouter, supprimer, ou modifier des données dans la base de données.
-Diagramme de classe 
+
+Diagramme de classe
+
 ![Image](https://github.com/user-attachments/assets/b113f602-608c-40dc-9957-7b048ac5a5ee)
 
+
 Diagramme de cas d'utilisation 
+
 ![Image](https://github.com/user-attachments/assets/fd92ac72-583f-4036-a9f3-81e233b39263)
 
