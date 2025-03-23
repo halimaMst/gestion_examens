@@ -42,3 +42,7 @@ CREATE TABLE InscriptionExamen (
     FOREIGN KEY (examen_id) REFERENCES Examen(id),
     FOREIGN KEY (etudiant_id) REFERENCES Étudiant(id)
 );
+Diagramme de classe 
+![Image](https://github.com/user-attachments/assets/b113f602-608c-40dc-9957-7b048ac5a5ee)
+Diagramme de cas d'utilisation 
+
