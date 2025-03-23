@@ -44,7 +44,7 @@ CREATE TABLE InscriptionExamen (
 );
 Technologies et outils utilisés dans le projet
 1. Langage de programmation
-Java : Langage principal pour le développement de l: Langage principal pour le développement de l'application, permettant une gestion robuste de la logique métier et une intégration facile avec des bases de données et des interfaces graphiques.
+Java : Langage principal pour le développement de l'application, permettant une gestion robuste de la logique métier et une intégration facile avec des bases de données et des interfaces graphiques.
 
 2. Interface graphique (UI)
 Java Swing : Framework utilisé pour créer une interface utilisateur interactive et intuitive . Swing est intégré directement à Java et: Framework utilisé pour créer une interface utilisateur interactive et intuitive. Swing est intégré directement à Java et permet de concevoir des fenêtres, des boutons, des menus et autres éléments graphiques.
@@ -54,7 +54,7 @@ MySQL : Système de gestion de base de données relationnelle utilisé pour stoc
 
 phpMyAdmin : Outil web pour gérer MySQL, offrant une interface graphique pour interagir avec la base de données, effectuer des requêtes SQL et gérer les structures de données.
 
-4. Bibliothèque pour Graphiques
+4. Bibliothèque pour Le graphe
 JFreeChart : Bibliothèque Java pour créer des graphiques comme des histogrammes, des courbes ou des camemberts. Utilisée pour visualiser des données telles que le nombre d'étudiants inscrits par examen ou d'autres statistiques.
 5. Outils de développement
 NetBeans : IDE Java pour le développement, qui fournit des outils intégrés pour gérer le code, déboguer, et travailler avec des interfaces graphiques et des bases de données.
